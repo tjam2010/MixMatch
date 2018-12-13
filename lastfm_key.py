@@ -1,0 +1,2 @@
+# for last.fm
+key = ""

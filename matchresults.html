@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>{{page_title}}</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3pro.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-blue.css">
+
+<body>
+<div style="padding:25px">
+    <header style="width:100%;height:100px;background:url(//imgur.com/I3Rpg9o.jpg);background-size: contain;background-repeat: no-repeat;">
+    </header>
+</div>
+
+<div class="w3-container">
+    <div class="w3-cell-row">
+        <div class="w3-cell w3-container">
+            <h3>{{playlist_title}}</h3>
+            <p>A playlist featuring a combination of {{genre if genre}} music from the following users:</p>
+            <p>
+                {% for user in usernames %}
+                {{loop.index ~ ". " ~ user}}<br/>
+                {% endfor %}
+            </p>
+            <hr>
+            <P style="background-color:#D6EAF8; overflow: hidden; max-width: 600px;">
+                {% for song in combined_playlist %}
+                {{ loop.index ~ ". " ~ song }}
+                <br/>
+                {% endfor %}
+            </p>
+            <hr>
+            <form action="matchresults" method="post">
+                <p>Would you like to change your playlist settings?</p>
+                <input type="submit" value="Go Back" name="backbttn"/>
+            </form>
+            <hr>
+        </div>
+    </div>
+</div>
+
+<footer class="w3-container w3-theme">
+    <h3>&copy; 2018 TJ Gascho</h3>
+</footer>
+
+</body>

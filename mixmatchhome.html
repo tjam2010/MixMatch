@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>{{page_title}}</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3pro.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-blue.css">
+
+<body>
+<div style="padding:25px">
+    <header style="width:100%;height:100px;background:url(//imgur.com/I3Rpg9o.jpg);background-size: contain;background-repeat: no-repeat;">
+    </header>
+</div>
+
+<div class="w3-container">
+    <hr>
+    <div class="w3-cell-row">
+        <form action="matchresults" method="post">
+            <h3> Add 2-10 Last.fm users to your mixtape: </h3>
+            <input type="text" id="uinput" name="uinput"/>
+            <input type="submit" value="Add" name="addbttn"/>
+        </form>
+        <hr>
+        <h3> Mixtape Members: </h3>
+        {% if usernames|length == 0%}
+        <p> No members have been input. </p>
+        {% endif %}
+        <p>
+            {% for user in usernames %}
+            {{loop.index ~ ". " ~ user}}<br/>
+            {% endfor %}
+        </p>
+        <form action="matchresults" method="post">
+            <input type="submit" value="Remove" name="rmbttn"/>
+        </form>
+        <hr>
+        <h3> Choose the approximate length (Optional): </h3>
+        <form action="matchresults" method="post">
+            <p>NOTE: Anything over 1 hour may result in an error due to API request limitations.
+            <p/>
+            Hours (between 1 and 24):
+            <input type="number" id="length" name="length" min="1" max="24" step=".5" placeholder="1"
+                   value="{{length}}">
+            <input type="submit" value="Set Length" name="lengthbttn"/>
+            <h4>Length is <strong>{{length if length else 1}} hour(s)</strong>.</h4>
+        </form>
+        <hr>
+        <h3> Enter a musical genre (Optional): </h3>
+        <p>NOTE: By setting a genre filter, the result may be shorter than the set length.
+        <p/>
+        <form action="matchresults" method="post">
+            <input type="text" id="genre" name="genre" placeholder="eg. indie, hip hop, pop"
+                   value="{{genre if genre}}"/>
+            <input type="submit" value="Set Genre" name="genrebttn"/>
+            <h4>Genre is <strong>{{genre if genre else "not set"}}</strong>.</h4>
+        </form>
+        <hr>
+        {% if usernames|length >= 2 and usernames|length <= 10%}
+        <form action="matchresults" method="post">
+            <input type="submit" value="Get Playlist" name="getbttn"/>
+        </form>
+        <hr>
+        {% endif %}
+    </div>
+</div>
+
+<footer class="w3-container w3-theme">
+    <p>&copy; 2018 TJ Gascho</p>
+</footer>
+
+</body>
