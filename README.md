@@ -2,6 +2,8 @@
 The general idea of MixMatch was to create a web app that allowed for users to create a custom group-playlist based upon Last.fm data.
 To see the app in action, visit http://mixmatch-hcde310.appspot.com
 
+**NOTE:** To use this code, you must get a Last.fm API key from https://www.last.fm/api/account/create and insert it into the quotation marks of the lastfm_key.py file.
+
 For a brief overview, watch this introduction video:
 
 [![MixMatch Intro](https://github.com/tjam2010/MixMatch/blob/master/screenshots/IntroVideo.JPG)](https://youtu.be/z8JA6_gg-aQ "MixMatch Intro")
