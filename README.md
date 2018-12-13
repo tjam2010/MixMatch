@@ -4,7 +4,7 @@ To see the app in action, visit http://mixmatch-hcde310.appspot.com
 
 For a brief overview, watch this introduction video:
 
-[![MixMatch Intro]()](https://youtu.be/z8JA6_gg-aQ "MixMatch Intro")
+[![MixMatch Intro](https://github.com/tjam2010/MixMatch/blob/master/screenshots/IntroVideo.JPG)](https://youtu.be/z8JA6_gg-aQ "MixMatch Intro")
 
 # The Proposal
 In this project, I will build a playlist-generating web application, combining information from multiple users on Last.fm that revolve around a specific tag. Often times it can be difficult for people to decide on music to listen to in a group setting, or to find similar tastes. This tool could help solve that issue, and may be of interest to multiple audiences:
@@ -54,4 +54,8 @@ Most of the large scale adjustments were a direct result of the limitations of a
 # The Result
 Here are some screenshots of the website in its current state:
 ### Mobile Screenshots
+<img alt="MixMatch Mobile Home Screen 1" src="https://github.com/tjam2010/MixMatch/blob/master/screenshots/IMG_0982.PNG" width=200px> <img alt="MixMatch Mobile Home Screen 2" src="https://github.com/tjam2010/MixMatch/blob/master/screenshots/IMG_0983.PNG" width=200px> <img alt="MixMatch Mobile Results Screen 1" src="https://github.com/tjam2010/MixMatch/blob/master/screenshots/IMG_0984.PNG" width=200px> <img alt="MixMatch Mobile Results Screen 2" src="https://github.com/tjam2010/MixMatch/blob/master/screenshots/IMG_0985.PNG" width=200px>
 ### Desktop Screenshots
+<img alt="MixMatch Desktop Home Screen 1" src="https://github.com/tjam2010/MixMatch/blob/master/screenshots/mmdesktop1.JPG" width=400px>    <img alt="MixMatch Desktop Home Screen 2" src="https://github.com/tjam2010/MixMatch/blob/master/screenshots/mmdesktop3.JPG" width=400px>
+
+<img alt="MixMatch Desktop Results Screen 1" src="https://github.com/tjam2010/MixMatch/blob/master/screenshots/mmdesktop5.JPG" width=400px>    <img alt="MixMatch Desktop Results Screen 2" src="https://github.com/tjam2010/MixMatch/blob/master/screenshots/mmdesktop7.JPG" width=400px>
